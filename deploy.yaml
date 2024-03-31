@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linux-monitor 
+  labels:
+    app: lm
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: lm
+  template:
+    metadata:
+      labels:
+        app: lm
+    spec:
+      containers:
+      - name: linux-monitor-system
+        image: praszp246/linux-monitor
+        ports:
+        - containerPort: 5000
+

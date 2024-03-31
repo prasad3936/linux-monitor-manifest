@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: linux-monitor-service
+spec:
+  type: NodePort
+  selector:
+    app: lm
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+      nodePort: 31000
