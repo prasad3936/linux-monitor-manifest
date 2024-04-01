@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: linux-monitor-system
-        image: praszp246/linux-monitor:replaceImageTag
+        image: praszp246/linux-monitor:16
         ports:
         - containerPort: 5000
 
