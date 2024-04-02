@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
   - name: linux-monitor-system
-    image:  praszp246/linux-monitor
+    image:  praszp246/cicd-e2e
     ports:
     - containerPort: 5000
